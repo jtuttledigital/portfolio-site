@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+html { scroll-behavior: smooth; }
+
+/* basic typography */
+.prose { @apply text-base leading-7 text-ink/90; }
+.prose h2 { @apply text-xl font-semibold text-ink mt-10 mb-3; }
+.prose p { @apply mb-4; }
+.prose a { @apply underline decoration-2 underline-offset-4; }
+
+/* project grid */
+.card {
+  @apply rounded-2xl border border-black/5 bg-white shadow-soft 
+         hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5;
+}
+
+/* selection */
+::selection { background: #111; color: #fff; }
